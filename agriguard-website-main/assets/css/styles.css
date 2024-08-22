@@ -230,16 +230,13 @@ the website, in dark theme
 /*=============== HEADER ===============*/
 
 .header {
-    /* width: 100%;
-    background-color: var(--body-color); */
-    background-image: url(/agriguard-website-main/assets/img/cover.jpg ); 
+    width: 100%;
+    background-image: url(/agriguard-website-main/assets/img/scan\ \ 3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     color: white;
-    /* display: flex; */
-    /*For animation dark mode*/
 }
 
 .home__data{
@@ -264,6 +261,8 @@ home__title {
     font-size: 1.2rem; 
     margin-bottom: 1.5rem; 
     text-align: center;
+    color: black;
+    font-weight: 500;
 }
 
 .button {
@@ -311,16 +310,19 @@ home__title {
 .nav__logo {
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     display: inline-flex;
     align-items: center;
-    column-gap: .5rem;
+    column-gap: 2rem;
     transition: .3s;
+    font-size: 21px;
+    font-weight: 900;
 }
 
 .nav__logo-icon {
     font-size: 5rem;
     color: var(--first-color);
+    padding-left: 10px;
 }
 
 .nav__logo:hover {
@@ -516,7 +518,7 @@ home__title {
 }
 
 .about__img {
-    width: 280px;
+    width: 100%;
     justify-self: center;
 }
 
@@ -1144,7 +1146,7 @@ home__title {
         padding-right: 7rem;
     }
     .about__img {
-        width: 380px;
+        width: 100%;
     }
     .steps__container {
         grid-template-columns: repeat(3, 1fr);

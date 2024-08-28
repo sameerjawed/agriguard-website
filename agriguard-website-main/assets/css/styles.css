@@ -210,7 +210,7 @@ the website, in dark theme
 }
 @media (max-width: 768px) {
     .container {
-        padding: 0 15px; /* Example for smaller screens */
+        padding: 0 15px; /
     }
 }
 
@@ -1224,3 +1224,5 @@ home__title {
         right: 3rem;
     }
 }
+
+

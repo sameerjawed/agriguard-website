@@ -13,13 +13,14 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/max.css">
+    <link rel="stylesheet" href="assets/css/team.css">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>AgriGuard</title>
 </head>
 
@@ -30,11 +31,12 @@
             <a href="#" class="nav__logo">
                 <i class="ri-leaf-line nav__logo-icon"></i> AgriGuard
             </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
+            <!-- Menu -->
+            <!-- <div class="nav__menu" id="nav-menu"> -->
+                <ul class="sidebar">
+                    <li class="menu1" onclick=hideSidebar() > <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a href="#home" class="nav__link" >Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About Us</a>
@@ -49,7 +51,26 @@
                         <a href="#contact" class="nav__link">Contact Us</a>
                     </li>
                 </ul>
-
+                <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="hideOnMobile">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="#products">Our Team</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="#faqs">FAQs</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                    <li class="menu2"  onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                <!-- Close Icon -->
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-line"></i>
                 </div>
@@ -60,26 +81,26 @@
 
         <section class="home" id="home">
             <!-- <div class="home__container container grid"> -->
-                <!-- <img src="assets/img/plant-identifier-app-development-cost-features.jpg" alt="home_img" class="home__img"> -->
-    
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Protect Your Crops<br> with AgriGuard
-                    </h1>
-                    <p class="home__description">
-                        Advanced AI-powered crop disease detection at your fingertips.
-                    </p>
-                    <a href="#about" class="button button--flex">
-                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
+            <!-- <img src="assets/img/plant-identifier-app-development-cost-features.jpg" alt="home_img" class="home__img"> -->
+
+            <div class="home__data">
+                <h1 class="home__title">
+                    Protect Your Crops<br> with AgriGuard
+                </h1>
+                <p class="home__description">
+                    Advanced AI-powered crop disease detection at your fingertips.
+                </p>
+                <a href="#about" class="button button--flex">
+                    Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                </a>
                 <!-- </div> -->
             </div>
         </section>
-    
-</header>
+
+    </header>
     <main class="main">
         <!--==================== HOME ====================-->
-        
+
         <!--==================== ABOUT ====================-->
         <section class="about section container" id="about">
             <div class="about__container grid">
@@ -91,7 +112,8 @@
                     </h2>
 
                     <p class="about__description">
-                        We have over 4000+ unbiased reviews and our customers trust our plant process and delivery service every time
+                        We have over 4000+ unbiased reviews and our customers trust our plant process and delivery
+                        service every time
                     </p>
 
                     <div class="about__details">
@@ -99,10 +121,12 @@
                             <i class="ri-checkbox-fill about__details-icon"></i> We always deliver on time.
                         </p>
                         <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i> We give you guides to protect and care for your plants.
+                            <i class="ri-checkbox-fill about__details-icon"></i> We give you guides to protect and care
+                            for your plants.
                         </p>
                         <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i> We always come over for a check-up after sale.
+                            <i class="ri-checkbox-fill about__details-icon"></i> We always come over for a check-up
+                            after sale.
                         </p>
                         <p class="about__details-description">
                             <i class="ri-checkbox-fill about__details-icon"></i> 100% money back guaranteed.
@@ -110,8 +134,8 @@
                     </div>
 
                     <a href="#" class="button--link button--flex">
-                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
+                        Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -120,7 +144,7 @@
         <!--==================== ABOUT ====================-->
         <section class="about section container" id="about">
             <div class="about__container grid">
-             
+
 
                 <div class="about__data">
                     <h2 class="section__title about__title">
@@ -128,7 +152,8 @@
                     </h2>
 
                     <p class="about__description">
-                        We have over 4000+ unbiased reviews and our customers trust our plant process and delivery service every time
+                        We have over 4000+ unbiased reviews and our customers trust our plant process and delivery
+                        service every time
                     </p>
 
                     <div class="about__details">
@@ -136,10 +161,12 @@
                             <i class="ri-checkbox-fill about__details-icon"></i> We always deliver on time.
                         </p>
                         <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i> We give you guides to protect and care for your plants.
+                            <i class="ri-checkbox-fill about__details-icon"></i> We give you guides to protect and care
+                            for your plants.
                         </p>
                         <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i> We always come over for a check-up after sale.
+                            <i class="ri-checkbox-fill about__details-icon"></i> We always come over for a check-up
+                            after sale.
                         </p>
                         <p class="about__details-description">
                             <i class="ri-checkbox-fill about__details-icon"></i> 100% money back guaranteed.
@@ -147,8 +174,8 @@
                     </div>
 
                     <a href="#" class="button--link button--flex">
-                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
+                        Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
                 </div>
                 <img src="assets/img/scan1.jpg" alt="" class="about__img">
             </div>
@@ -256,7 +283,7 @@
                         <a href="#"><i class="ri-instagram-fill"></i></a>
                     </div>
                 </div>
-    
+
                 <div class="box">
                     <img src="/agriguard-website-main/assets/img/max.jpg">
                     <h3>Steph Jobs</h3>
@@ -267,7 +294,7 @@
                         <a href="#"><i class="ri-instagram-fill"></i></a>
                     </div>
                 </div>
-    
+
                 <div class="box">
                     <img src="/agriguard-website-main/assets/img/max.jpg">
                     <h3>Steph Jobs</h3>
@@ -278,7 +305,7 @@
                         <a href="#"><i class="ri-instagram-fill"></i></a>
                     </div>
                 </div>
-    
+
                 <div class="box">
                     <img src="/agriguard-website-main/assets/img/max.jpg">
                     <h3>Steph Jobs</h3>
@@ -331,7 +358,8 @@
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                                Plants are easy way to add color energy and transform your space but which planet is for
+                                you. Choosing the right plant.
                             </p>
                         </div>
                     </div>
@@ -346,7 +374,8 @@
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                                Plants are easy way to add color energy and transform your space but which planet is for
+                                you. Choosing the right plant.
                             </p>
                         </div>
                     </div>
@@ -361,7 +390,8 @@
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                                Plants are easy way to add color energy and transform your space but which planet is for
+                                you. Choosing the right plant.
                             </p>
                         </div>
                     </div>
@@ -378,7 +408,8 @@
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                                Plants are easy way to add color energy and transform your space but which planet is for
+                                you. Choosing the right plant.
                             </p>
                         </div>
                     </div>
@@ -393,7 +424,8 @@
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                                Plants are easy way to add color energy and transform your space but which planet is for
+                                you. Choosing the right plant.
                             </p>
                         </div>
                     </div>
@@ -408,7 +440,8 @@
 
                         <div class="questions__content">
                             <p class="questions__description">
-                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                                Plants are easy way to add color energy and transform your space but which planet is for
+                                you. Choosing the right plant.
                             </p>
                         </div>
                     </div>
@@ -428,17 +461,17 @@
                         <div class="contact__information">
                             <h3 class="contact__subtitle">Call us for instant support</h3>
                             <span class="contact__description">
-                                    <i class="ri-phone-line contact__icon"></i>
-                                    +999 888 777
-                                </span>
+                                <i class="ri-phone-line contact__icon"></i>
+                                +999 888 777
+                            </span>
                         </div>
 
                         <div class="contact__information">
                             <h3 class="contact__subtitle">Write us by mail</h3>
                             <span class="contact__description">
-                                    <i class="ri-mail-line contact__icon"></i>
-                                    user@email.com
-                                </span>
+                                <i class="ri-mail-line contact__icon"></i>
+                                user@email.com
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -462,9 +495,9 @@
                     </div>
 
                     <button class="button button--flex">
-                            Send Message
-                            <i class="ri-arrow-right-up-line button__icon"></i>
-                        </button>
+                        Send Message
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
                 </form>
             </div>
         </section>
@@ -486,17 +519,18 @@
                     <input type="email" placeholder="Enter your email" class="footer__input">
 
                     <button class="button button--flex footer__button">
-                            Subscribe
-                            <i class="ri-arrow-right-up-line button__icon"></i>
-                        </button>
+                        Subscribe
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
                 </div>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">Our Address</h3>
                 <ul class="footer__data_address">
-                    <li class="footer__information">Galgotais University Innovation Gautam Buddha Nagar Uttar Pradesh 201310.</li>
-                  
+                    <li class="footer__information">Galgotais University Innovation Gautam Buddha Nagar Uttar Pradesh
+                        201310.</li>
+
                 </ul>
             </div>
 
@@ -506,7 +540,7 @@
                 <ul class="footer__data">
                     <li class="footer_contact">+91-12345-67890</li>
                     <li class="footer_contact">abc@gmail.com</li>
-                    
+
                     <div class="footer__social">
                         <a href="https://www.facebook.com/" class="footer__social-link">
                             <i class="ri-facebook-fill"></i>
@@ -537,8 +571,10 @@
                 </div> -->
 
                 <div class="footer__service-actions">
-                    <a href="https://play.google.com/store/apps" class="btn btn-primary" target="_blank">Download on Google Play</a>
-                    <a href="https://apps.apple.com" class="btn btn-primary" target="_blank">Download on the App Store</a>
+                    <a href="https://play.google.com/store/apps" class="btn btn-primary" target="_blank">Download on
+                        Google Play</a>
+                    <a href="https://apps.apple.com" class="btn btn-primary" target="_blank">Download on the App
+                        Store</a>
                     <a href="/features" class="btn btn-secondary">Learn More</a>
                 </div>
 
@@ -547,7 +583,7 @@
             </div>
         </div>
 
-        <p class="footer__copy">&#169; AgriGuard. All rigths reserved   document <span id="year"></span> .</p>
+        <p class="footer__copy">&#169; AgriGuard. All rigths reserved document <span id="year"></span> .</p>
     </footer>
 
     <!--=============== SCROLL UP ===============-->
@@ -559,10 +595,21 @@
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     <script>
         // JavaScript to dynamically insert the current year
         document.getElementById('year').textContent = new Date().getFullYear();
+        // here pf some navbar responsive js code
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+        
     </script>
 </body>
+
 </html>
